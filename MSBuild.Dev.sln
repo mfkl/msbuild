@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Build.Utilities.U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xunit.NetCore.Extensions", "src\Xunit.NetCore.Extensions\Xunit.NetCore.Extensions.csproj", "{66C6C1ED-30E7-45DD-9F73-2FBB7889CDBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuild.Benchmarks", "src\MSBuild.Benchmarks\MSBuild.Benchmarks.csproj", "{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -412,6 +414,36 @@ Global
 		{66C6C1ED-30E7-45DD-9F73-2FBB7889CDBA}.Release-MONO|x64.Build.0 = Release|x64
 		{66C6C1ED-30E7-45DD-9F73-2FBB7889CDBA}.Release-MONO|x86.ActiveCfg = Release|Any CPU
 		{66C6C1ED-30E7-45DD-9F73-2FBB7889CDBA}.Release-MONO|x86.Build.0 = Release|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug|x64.ActiveCfg = Debug|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug|x64.Build.0 = Debug|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug|x86.Build.0 = Debug|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug-MONO|Any CPU.ActiveCfg = Debug-MONO|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug-MONO|Any CPU.Build.0 = Debug-MONO|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug-MONO|x64.ActiveCfg = Debug-MONO|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug-MONO|x64.Build.0 = Debug-MONO|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug-MONO|x86.ActiveCfg = Debug-MONO|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Debug-MONO|x86.Build.0 = Debug-MONO|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.MachineIndependent|Any CPU.ActiveCfg = MachineIndependent|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.MachineIndependent|Any CPU.Build.0 = MachineIndependent|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.MachineIndependent|x64.ActiveCfg = MachineIndependent|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.MachineIndependent|x64.Build.0 = MachineIndependent|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.MachineIndependent|x86.ActiveCfg = MachineIndependent|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.MachineIndependent|x86.Build.0 = MachineIndependent|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release|x64.ActiveCfg = Release|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release|x64.Build.0 = Release|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release|x86.ActiveCfg = Release|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release|x86.Build.0 = Release|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release-MONO|Any CPU.ActiveCfg = Release-MONO|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release-MONO|Any CPU.Build.0 = Release-MONO|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release-MONO|x64.ActiveCfg = Release-MONO|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release-MONO|x64.Build.0 = Release-MONO|x64
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release-MONO|x86.ActiveCfg = Release-MONO|Any CPU
+		{ADF32D12-5552-4C88-A903-CFDBDDAFBBFF}.Release-MONO|x86.Build.0 = Release-MONO|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
