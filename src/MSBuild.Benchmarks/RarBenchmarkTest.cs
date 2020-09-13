@@ -9,6 +9,7 @@ namespace MSBuild.Benchmarks
 {
     /// <summary>
     /// from https://github.com/dotnet/msbuild/blob/master/src/Tasks.UnitTests/AssemblyDependency/Perf.cs
+    /// https://github.com/dotnet/msbuild/blob/master/src/Tasks.UnitTests/AssemblyDependency/Miscellaneous.cs
     /// </summary>
     public class RarBenchmarkTest
     {
