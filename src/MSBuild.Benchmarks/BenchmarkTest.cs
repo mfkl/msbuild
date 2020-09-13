@@ -1,7 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using Microsoft.Build.Construction;
 using Microsoft.Build.Evaluation;
-using Microsoft.Build.Tasks;
 using System.IO;
 
 namespace MSBuild.Benchmarks
@@ -9,13 +8,6 @@ namespace MSBuild.Benchmarks
     public class BenchmarkTest
     {
         Project project;
-
-        //[Benchmark]
-        //public void Test()
-        //{
-        //    ResolveAssemblyReference t = new ResolveAssemblyReference();
-        //    t.Execute();
-        //}
 
         [GlobalSetup(Target = nameof(PreprocessorBenchmarkSingle))]
         public void PreprocessorBenchmarkSingleSetup()

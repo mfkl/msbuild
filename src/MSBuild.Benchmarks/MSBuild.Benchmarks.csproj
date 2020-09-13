@@ -9,6 +9,7 @@
     <PackageReference Include="BenchmarkDotNet" />
     <ProjectReference Include="..\Build\Microsoft.Build.csproj" />
     <ProjectReference Include="..\Tasks\Microsoft.Build.Tasks.csproj" />
+    <ProjectReference Include="..\Tasks.UnitTests\\Microsoft.Build.Tasks.UnitTests.csproj" />
   </ItemGroup>
 
 </Project>
