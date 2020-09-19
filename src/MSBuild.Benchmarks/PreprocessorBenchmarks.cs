@@ -5,7 +5,7 @@ using System.IO;
 
 namespace MSBuild.Benchmarks
 {
-    public class BenchmarkTest
+    public class PreprocessorBenchmarks
     {
         Project project;
 
