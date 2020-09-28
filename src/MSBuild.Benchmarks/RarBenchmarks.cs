@@ -15,7 +15,8 @@ namespace MSBuild.Benchmarks
     public class RarBenchmarks
     {
         // retrieved from ResolveAssemblyReferenceTestFixture
-        static readonly string s_rootPathPrefix = /* NativeMethodsShared.IsWindows */ true ? "C:\\" : Path.VolumeSeparatorChar.ToString();
+        static readonly string s_rootPathPrefix = "C:\\";
+        static readonly string s_regress442570_RootPath = Path.Combine(s_rootPathPrefix, "Regress442570");
         static readonly string s_myLibrariesRootPath = Path.Combine(s_rootPathPrefix, "MyLibraries");
         static readonly string s_myLibraries_V1Path = Path.Combine(s_myLibrariesRootPath, "v1");
         static readonly string s_myLibraries_V2Path = Path.Combine(s_myLibrariesRootPath, "v2");
@@ -55,7 +56,23 @@ namespace MSBuild.Benchmarks
                 SearchPaths = new string[] {
                     s_myLibrariesRootPath, s_myLibraries_V2Path, s_myLibraries_V1Path
                 },
+            };
+        }
 
+        [GlobalSetup(Target = nameof(RedirectsAreSuggestedInExternallyResolvedGraph))]
+        public void RedirectsAreSuggestedInExternallyResolvedGraphSetup()
+        {
+            t = new ResolveAssemblyReference
+            {
+                BuildEngine = new MockEngine(),
+                AutoUnify = true,
+                FindDependenciesOfExternallyResolvedReferences = true,
+                Assemblies = new ITaskItem[]
+                {
+                    new TaskItem("A", new Dictionary<string, string> { ["ExternallyResolved"] = "true" } ),
+                    new TaskItem("B", new Dictionary<string, string> { ["ExternallyResolved"] = "true" } )
+                },
+                SearchPaths = new string[] { s_regress442570_RootPath }
             };
         }
 
@@ -64,9 +81,15 @@ namespace MSBuild.Benchmarks
         {
             t.Execute();
         }
-        
+
         [Benchmark]
         public void DependeeDirectoryShouldNotBeProbedForDependencyWhenDependencyResolvedExternally()
+        {
+            t.Execute();
+        }
+
+        [Benchmark]
+        public void RedirectsAreSuggestedInExternallyResolvedGraph()
         {
             t.Execute();
         }
